@@ -1,11 +1,12 @@
 #include <iostream>
 #include <set>
-
+#include <map>
+#include <string>
 using namespace std;
 
 int main()
 {
-	set<int> group;
+	/*set<int> group;
 	group.insert(4);
 	group.insert(1);
 	group.insert(2);
@@ -19,7 +20,14 @@ int main()
 	cout << endl;
 
 	auto ptr = group.find(3);
-	cout << *ptr << endl;
+	cout << *ptr << endl;*/
 
+	map<int, string> group;
 
-}
+	group.insert(pair<int, string>(5000, "Ivanov"));
+	group.insert(pair<int, string>(2500, "Petrov"));
+	group.insert(pair<int, string>(3000, "Sidorovich"));
+	group.insert(pair<int, string>(1500, "Petrovich"));
+	group.insert(pair<int, string>(4000, "Polyakov"));
+	group.insert(pair<int, string>(6000, "Tenetkov"));
+
